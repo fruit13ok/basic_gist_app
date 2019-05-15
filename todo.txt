@@ -1,0 +1,43 @@
+1) User story
+User able to post a text (e.g. code snippet) to a dummy data store
+    Backend generate a url store code snippet
+User can go to valid URL and see corresponding code snippet
+store data just need to be temporary
+
+2) Scope
+POST /gist
+GET /gist/:id
+
+3) Fundamental Components/Key Functionality
+Post text snippet
+Store text snippet
+Generate URL based off of current date
+Be able to retrieve text snippet from URL
+
+4) Tech
+Could be html form / ajax / fetch on the front
+node/express on the backend
+Could be local object / localstorage / mongodb
+
+5) Todos
+File structure
+    basic_gist_app
+        public
+            index.html
+        server
+            index.js
+            db.js
+        package.json
+        todos.txt
+
+NPM init/install dependencies
+    npm init -y
+    add run script
+        "start-dev": "nodemon server"
+    npm i --save express body-parser
+    npm i --save-dev nodemon
+
+Implement post /gist route with simple form on the front encoded
+    local storage / object server-side
+Implement get /gist/:id route display one text snippet
+
